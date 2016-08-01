@@ -1,4 +1,19 @@
-jeffen_note
+JeffenNote App for Android 
 ===========
+# V1.1.1 features
+- note
+- star
+- alarm
+- bookmark
+- checklist
+- merge note
+- copy note. 
+- And cloud note is coming soon.
+- （support Android Version: 4.0+）
 
-android app that note some ideas every where and every time.
+# [V1.1.2 豌豆荚下载][wandoujia]
+0.fixbug：checklist只能编存本屏所见item 
+1.load more 添加上边线 
+2.其他小调整
+
+[wandoujia]:http://www.wandoujia.com/apps/com.jeffen.note
