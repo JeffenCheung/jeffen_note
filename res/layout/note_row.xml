@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_rect_selector" >
+
+    <TableLayout
+        android:id="@+id/row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="1dp"
+                android:padding="1dp" >
+
+                <ImageView
+                    android:id="@+id/note_row_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/top_left"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/item_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/cTableLine"
+                android:text="" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/note_row_title"
+                android:layout_width="fill_parent"
+                android:layout_height="104px"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:minWidth="10000dp"
+                android:text="第一组第一项"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_note_row_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/list_rect_selector"
+                android:gravity="right|top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/note_row_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="2dip"
+                    android:text="1999年12月3号"
+                    android:textColor="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/note_row_hhmm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="2dip"
+                    android:text="23:12"
+                    android:textColor="@android:color/darker_gray" />
+
+                <ImageView
+                    android:id="@+id/note_row_bookmark_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-1dip"
+                    android:background="@drawable/bookmark_gray_horizontal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="99"
+                android:background="@color/cTableLine"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_span="99"
+                android:background="@color/white"
+                android:text="" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="1dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtAlarmMD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text=""
+                    android:textColor="#AFAFAF"
+                    android:textSize="10sp" >
+                </TextView>
+
+                <view
+                    android:id="@+id/note_row_starbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_margin="1dp"
+                    class="com.widget.star.StarButton"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/star" />
+
+                <TextView
+                    android:id="@+id/txtAlarmHM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text=""
+                    android:textColor="#AFAFAF"
+                    android:textSize="10sp" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="@color/cTableLine"
+                android:text="" >
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/note_row_body"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="2dip"
+                        android:text="第一组第一项内容"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/note_row_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/list_rect_selector"
+                        android:text="总共12项，已完成5项。"
+                        android:textColor="@color/KleinBlue"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/note_row_image"
+                    android:layout_width="160px"
+                    android:layout_height="160px"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/note_row_image_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15px"
+                    android:layout_marginTop="8px"
+                    android:text="1 张"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/note_row_id"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/note_row_isdeleted"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

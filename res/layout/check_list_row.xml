@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple_text" >
+
+        <TextView
+            android:id="@+id/item_line"
+            android:layout_width="5px"
+            android:layout_height="fill_parent"
+            android:background="@color/cTableLine"
+            android:text="" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/item_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/cTableLine"
+            android:text="" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/check_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dip"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/simple_text"
+            android:hint="新增一个条目"
+            android:minWidth="10000dip"
+            android:text=""
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/check_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="1dip"
+            android:hint="分"
+            android:numeric="integer"
+            android:text=""
+            android:textColor="@color/KleinBlue"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"            
+            android:layout_gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/check_item_add"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:text="+"
+                android:textColor="@color/KleinBlue" />
+
+            <Button
+                android:id="@+id/check_item_delete"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:text="×"
+                android:textColor="@color/KleinBlue" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/check_item_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/item_checked"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+    </TableRow>
+
+</TableLayout>

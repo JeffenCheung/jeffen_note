@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/iamge_switch_menu_rotate"
+        android:icon="@drawable/transform_rotate_90"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/btnRotate"/>
+
+</menu>

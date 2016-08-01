@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <!--
+         id must be defind 'list' or the error exception:
+		java.lang.RuntimeException: Your content must have a ListView whose id attribute is 'android.R.id.list'
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cItemTitle"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/noteTitleET"
+            android:layout_width="wrap_content"
+            android:layout_height="55dip"
+            android:layout_weight="1"
+            android:background="@drawable/simple_text"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:text=""
+            android:textColor="@color/KleinBlue"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/shift_sort"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:text="卐"
+                android:textColor="@color/KleinBlue"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/check_all"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:text="√"
+                android:textColor="@color/KleinBlue"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:choiceMode="singleChoice" />
+
+</LinearLayout>

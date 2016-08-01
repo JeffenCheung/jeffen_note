@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- id must be defind 'list' or the error exception: -->
+    <!-- java.lang.RuntimeException: -->
+    <!-- Your content must have a ListView whose id attribute is 'android.R.id.list' -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/android:empty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dip"
+                android:gravity="center"
+                android:text="@string/noteHint"
+                android:textColor="@color/cGray"
+                android:textSize="20dip" />
+
+            <ListView
+                android:id="@+id/android:list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/blank"
+                android:choiceMode="singleChoice"
+                android:divider="@color/cTableLine"
+                android:dividerHeight="0.1dp"
+                android:listSelector="@color/blank"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/note_row_load" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

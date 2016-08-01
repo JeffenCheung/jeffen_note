@@ -1,0 +1,86 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="10dip"
+    android:background="@drawable/corners_bg"
+    android:stretchColumns="1" >
+
+    <TableRow android:padding="2dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="@string/username"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="user name"
+            android:padding="3dip"
+            android:scrollHorizontally="true" />
+    </TableRow>
+
+    <TableRow android:padding="2dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="3dip"
+            android:text="@string/password"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:hint="......"
+            android:padding="3dip"
+            android:password="true"
+            android:scrollHorizontally="true" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_span="99"
+            android:background="@color/cTableLine"
+            android:text="" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="5dip"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:text="@string/btnCancle"
+            android:textColor="@color/KleinBlue" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:gravity="center"
+            android:text="@string/btnLogin"
+            android:textColor="@color/KleinBlue" />
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="5dip"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSingUp"
+            android:textColor="@color/KleinBlue" />
+    </TableRow>
+
+</TableLayout>

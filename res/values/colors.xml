@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- color/drawable -->
+    <color name="KleinBlue">#002FA7</color>
+    <color name="cItemTitle">#E1E1E1</color>
+    <color name="cTableLine">#C7C7C7</color>
+    <color name="cGray">#B6B6B6</color>
+    <color name="myYellow">#FFD755</color>
+    <color name="myYellow2">#D0D797</color>
+    <color name="myBlue">#427BAC</color>
+    <color name="myGreen">#58AD0E</color>
+    <color name="white">#fff</color>
+    <color name="blank">#00000000</color>
+    <color name="myGreen2">#ADFF2F</color>
+
+</resources>

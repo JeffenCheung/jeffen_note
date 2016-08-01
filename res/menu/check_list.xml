@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/check_list_menu_plus"
+        android:icon="@drawable/plus"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/btnPlus"/>
+    <item
+        android:id="@+id/check_list_menu_save"
+        android:icon="@drawable/save"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/btnSave"/>
+    <item
+        android:id="@+id/check_list_menu_shift"
+        android:icon="@drawable/up_down"
+        android:title="@string/btnShift"/>
+    <item
+        android:id="@+id/check_list_menu_desc"
+        android:title="@string/btnDesc"/>
+    <item
+        android:id="@+id/check_list_menu_reset"
+        android:title="@string/btnReset"/>
+
+</menu>

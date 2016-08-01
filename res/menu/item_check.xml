@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item_check"
+        android:showAsAction="always"
+        android:title="item check">
+        <menu>
+            <item
+                android:id="@+id/menu_check_all"
+                android:title="checkall"/>
+            <item
+                android:id="@+id/menu_uncheck_all"
+                android:title="uncheckall"/>
+        </menu>
+    </item>
+
+</menu>

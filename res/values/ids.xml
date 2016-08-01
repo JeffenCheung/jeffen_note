@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="help_tab_body_info" type="id"/>
+    <item name="help_tab_body_manual" type="id"/>
+    <item name="help_tab_body_feedback" type="id"/>
+
+</resources>

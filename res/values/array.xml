@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="item_dialog_menu">
+        <item>清单</item>
+        <item>置顶</item>
+        <item>纸团</item>
+        <item>闹钟</item>
+        <item>分享</item>
+    </string-array>
+
+</resources>

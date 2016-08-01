@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="20px"
+    android:layout_marginTop="20px"
+    android:background="@drawable/corners_bg"
+    android:gravity="center" >
+
+    <ImageButton
+        android:id="@+id/ibApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/xh_ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="5px"
+        android:layout_height="fill_parent"
+        android:background="@color/cTableLine"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/ibSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/xh_search" />
+
+    <ImageButton
+        android:id="@+id/ibPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/xh_plus" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="3px"
+        android:layout_height="fill_parent"
+        android:background="@color/cTableLine"
+        android:text="" />
+
+    <ImageButton
+        android:id="@+id/ibStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xh_star_pink" />
+
+    <ImageButton
+        android:id="@+id/ibAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xh_alarm_clock" />
+
+</LinearLayout>
